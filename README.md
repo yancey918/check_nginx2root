@@ -31,7 +31,7 @@
 
 ### 1. 下載並賦予執行權限
 ```bash
-curl -O [https://raw.githubusercontent.com/](https://raw.githubusercontent.com/)<YOUR_ORG>/<YOUR_REPO>/main/check_nginx2root.sh
+curl -O [https://raw.githubusercontent.com/yancey918/check_nginx2root/refs/heads/main/check_nginx2root.sh](https://raw.githubusercontent.com/yancey918/check_nginx2root/refs/heads/main/check_nginx2root.sh)
 chmod +x check_nginx2root.sh
 ```
 
@@ -44,6 +44,11 @@ sudo ./check_nginx2root.sh
 
 # 方式 B：非互動模式（直接透過參數帶入網域，適合批次自動化腳本）
 sudo ./check_nginx2root.sh [www.example.com](https://www.example.com)
+```
+
+*(或者直接一行指令下載並執行)*：
+```bash
+curl -fsSL [https://raw.githubusercontent.com/yancey918/check_nginx2root/refs/heads/main/check_nginx2root.sh](https://raw.githubusercontent.com/yancey918/check_nginx2root/refs/heads/main/check_nginx2root.sh) | sudo bash -s -- [www.example.com](https://www.example.com)
 ```
 
 ### 3. 檢視詳細報告
